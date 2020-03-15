@@ -1,4 +1,5 @@
 <script>
+  import { Edit3Icon, Trash2Icon } from 'svelte-feather-icons';
   import { blur, slide, scale, fade, fly} from 'svelte/transition';
   import { quintOut } from 'svelte/easing';
   import { getContext } from 'svelte';
@@ -39,10 +40,10 @@
   </div>
   <div class="expense-buttons">
     <button class="expense-btn edit-btn" on:click="{()=>setModifiedExpense(id)}">
-      <i class="fas fa-pen" />
+      <Edit3Icon size="24" />
     </button>
     <button class="expense-btn delete-btn" on:click="{()=>removeExpense(id)}">
-      <i class="fas fa-trash" />
+      <Trash2Icon size="24" />
     </button>
 
   </div>

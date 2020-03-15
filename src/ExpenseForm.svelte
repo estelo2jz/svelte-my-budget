@@ -1,17 +1,6 @@
 <script>
-// import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
-// onMount(() => {
-//   console.log("form has mounted")
-// })
-// beforeUpdate(() => {
-//   console.count("before update")
-// })
-// afterUpdate(() => {
-//   console.count("after update")
-// })
-// onDestroy(() => {
-//   console.log("form is hidden")
-// })
+  import { XIcon } from 'svelte-feather-icons';
+
   import Title from './Title.svelte';
   export let name = "";
   export let amount = null;
@@ -61,7 +50,7 @@
     </button>
     <button type="button" class="close-btn" on:click={hideForm}>
       <i class="fas fa-times">
-        close
+        <XIcon />
       </i>
     </button>
   </form>
