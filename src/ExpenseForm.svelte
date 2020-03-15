@@ -50,7 +50,7 @@
     </button>
     <button type="button" class="close-btn" on:click={hideForm}>
       <i class="fas fa-times">
-        <XIcon />
+        <XIcon size="24" />
       </i>
     </button>
   </form>
